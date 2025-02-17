@@ -12,7 +12,6 @@
 </script>
 
 	<div id="grid-container">
-    <!-- 3x3 Grid -->
     <div id="grid-item-1" class="grid-item">1</div>
     <div id="grid-item-2" class="grid-item">2</div>
     <div id="grid-item-3" class="grid-item">3</div>
@@ -23,18 +22,11 @@
     <div id="grid-item-8" class="grid-item">8</div>
     <div id="grid-item-9" class="grid-item">9</div>
   </div>
-  <div>
-    <label for="block_id">Block ID:</label>
-    <input type="number" id="block_id" min="1" max="9">
-  </div>
-  <div>
-    <label for="colour_id">Color:</label>
-    <input type="text" id="colour_id">
-  </div>
-  <div>
-    <button id="change_button">Change Color</button>
-    <button id="reset">Reset</button>
-  </div>
+
+  <input id="block_id" type="number" placeholder="Block ID (1-9)">
+  <input id="colour_id" type="text" placeholder="Color (e.g. red)">
+  <button id="change_button">Change</button>
+  <button id="reset_button">Reset</button>
 
 </body>
 
