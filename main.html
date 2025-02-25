@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color Grid</title>
     <style>
-        #grid-container {
+        .grid-container {
             display: grid;
             grid-template-columns: repeat(3, 100px);
             grid-template-rows: repeat(3, 100px);
@@ -27,7 +27,7 @@
     </style>
 </head>
 <body>
-    <div id="grid-container">
+    <div class="grid-container">
         <!-- Creating 3x3 Grid -->
         <div class="grid-item" id="1">1</div>
         <div class="grid-item" id="2">2</div>
@@ -42,8 +42,8 @@
     
     <input type="number" id="block_id" placeholder="Enter Block ID (1-9)">
     <input type="text" id="colour_id" placeholder="Enter Color">
-    <button id="change_button">Change Color</button>
-    <button id="Reset">Reset</button>
+    <button id="change_button">Change</button>
+    <button id="reset_button">Reset</button>
 
     <script>
         document.getElementById("change_button").addEventListener("click", function() {
@@ -62,7 +62,7 @@
             document.getElementById(blockId).style.backgroundColor = color;
         });
         
-        document.getElementById("Reset").addEventListener("click", function() {
+        document.getElementById("reset_button").addEventListener("click", function() {
             document.querySelectorAll(".grid-item").forEach(item => {
                 item.style.backgroundColor = "transparent";
             });
